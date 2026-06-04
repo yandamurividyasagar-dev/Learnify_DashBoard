@@ -22,6 +22,9 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# Keep api folder tracked for Vercel serverless functions
+!api/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
