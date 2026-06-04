@@ -1,3 +1,9 @@
 {
-  "buildCommand": "npm run build"
+  "buildCommand": "npm run build",
+  "rewrites": [
+    {
+      "source": "/:path((?!_next|static|.*\\.js|.*\\.css).*)",
+      "destination": "/api/[[...route]].js"
+    }
+  ]
 }
